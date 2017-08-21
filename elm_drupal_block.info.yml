@@ -1,0 +1,5 @@
+name: Elm Drupal Block
+type: module
+description: Singleton block with an Elm App in it
+core: 8.x
+package: Custom

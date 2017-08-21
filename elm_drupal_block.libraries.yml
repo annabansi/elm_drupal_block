@@ -1,0 +1,4 @@
+elm_block_js:
+  js:
+    elm/build/elm-main.js: {preprocess: false}
+    elm/elm-app.js: {preprocess: false}
