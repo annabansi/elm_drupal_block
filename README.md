@@ -12,7 +12,7 @@ Clone this repository to your Drupal site's `/modules` directory:
 ```bash
 $ git clone https://github.com/annabansi/elm_drupal_block.git
 ```
-Install the module, and place the Elm block e.g. to the Sidebar second.
+Install the module, and place the Elm block e.g. into the Sidebar second.
 
 
 
@@ -39,18 +39,18 @@ settings:
   --package="Custom"
   --module-file="no"
   --features-bundle="no"
-  --composer="yes"
+  --composer="no"
   --dependencies="no"
   --test="no"
   --twigtemplate="no"
 ```
 
-It will generate `/elm_drupal_block/elm_drupal_block.info.yml` and `/elm_drupal_block/composer.json` files for you.
+It will generate `/elm_drupal_block/elm_drupal_block.info.yml` file for you.
 
 
 #### Drupal Block
 
-Generate a block in that module, and answer the questions according to the following settings:
+Generate a block to that module, and answer the questions according to the following settings:
 
 ```bash
 $ drupal generate:plugin:block
@@ -61,11 +61,12 @@ settings:
   --module="elm_drupal_block"
   --class="ElmBlock"
   --label="Elm block"
-  --plugin-id="elm_drupal_block"
+  --plugin-id="elm_block"
   --theme-region=""
   --inputs=""
   --services="no"
 ```
+
 You get the `/elm_drupal_block/src/Plugin/Block/ElmBlock.php` file.
 
 
@@ -75,7 +76,7 @@ Clear the caches:
 $ drupal cr all
 ```
 
-Finally, go to your site, install the module, and place the block e.g. to the Sidebar second.
+And now, go to your site, install the module, and place the block e.g. into the Sidebar second.
 
 
 #### Elm App
@@ -101,7 +102,7 @@ main =
 ```
 
 
-Compile Elm to JavaScript, and place it to `/elm/build/elm-main.js`:
+Compile Elm to JavaScript, and place it to `/elm/build/elm-main.js` using the following command:
 
 ```bash
 $ elm-make src/Main.elm --output=build/elm-main.js
@@ -117,7 +118,7 @@ var app = Elm.Main.embed(node);
 
 #### Embed JavaScript to Block
 
-Unfortunately there is no command for generating Drupal libraries, so we have to create it manually.
+Unfortunately there is no command for generating Drupal libraries, so we have to create the file manually.
 
 Add `/elm_drupal_block/elm_drupal_block.libraries.yml` file with the following content:
 
@@ -146,4 +147,4 @@ public function build() {
 ```
 
 
-#### Check your site with Elm in it!
+#### Check your site with a running Elm App in it!
