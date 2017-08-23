@@ -18,7 +18,7 @@ Install the module, and place the Elm block e.g. into the Sidebar second.
 
 ## Development process
 
-Use [Drupal Console](https://docs.drupalconsole.com/en/index.html) for generating boilerplate code.
+We will use [Drupal Console](https://docs.drupalconsole.com/en/index.html) for generating boilerplate code.
 
 
 #### Drupal module
@@ -119,7 +119,6 @@ var app = Elm.Main.embed(node);
 #### Embed JavaScript to Block
 
 Unfortunately there is no command for generating Drupal libraries, so we have to create the file manually.
-
 Add `/elm_drupal_block/elm_drupal_block.libraries.yml` file with the following content:
 
 ```yml
