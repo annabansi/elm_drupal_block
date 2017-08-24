@@ -7,7 +7,7 @@
 
 ## Try it out
 
-Clone this repository to your Drupal site's `/modules` directory:
+Clone this repository to your [Drupal 8](https://www.drupal.org/download) site's `/modules` directory:
 
 ```bash
 $ git clone https://github.com/annabansi/elm_drupal_block.git
@@ -18,7 +18,11 @@ Install the module, and place the Elm block e.g. into the Sidebar second.
 
 ## Development process
 
-We will use [Drupal Console](https://docs.drupalconsole.com/en/index.html) for generating boilerplate code.
+First of all you need these projects installed:
+
+- [Drupal Console](https://docs.drupalconsole.com/en/index.html) for generating boilerplate code
+- [Elm](https://guide.elm-lang.org/install.html) for compiling Elm application
+
 
 
 #### Drupal module
