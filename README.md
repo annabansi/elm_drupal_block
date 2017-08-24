@@ -25,9 +25,9 @@ First of all you need these projects installed:
 
 
 
-#### Drupal module
+#### Drupal Module
 
-Generate a new Drupal module, and answer the questions according to the following settings:
+Generate a new module, and answer the questions according to the following settings:
 
 ```bash
 $ drupal generate:module
