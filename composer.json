@@ -4,11 +4,11 @@
   "description": "Singleton block with an Elm App in it",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://github.com/annabansi/elm_drupal_block/",
+  "homepage": "https://github.com/annaghi/elm_drupal_block/",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://github.com/annabansi/elm_drupal_block/issues",
-    "source": "https://github.com/annabansi/elm_drupal_block.git"
+    "issues": "https://github.com/annaghi/elm_drupal_block/issues",
+    "source": "https://github.com/annaghi/elm_drupal_block.git"
   },
   "require": { }
 }
